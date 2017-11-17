@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TotalItemComponent} from "./total-item/total-item.component";
 import { TestComponent } from './test/test.component';
 import {HttpClientModule} from "@angular/common/http";
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import {HttpClientModule} from "@angular/common/http";
         ActionInputComponent,
         TotalListComponent,
         TotalItemComponent,
-        TestComponent
+        TestComponent,
+        TodoComponent
     ],
     imports: [
         BrowserModule,
