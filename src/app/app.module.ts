@@ -10,6 +10,8 @@ import {TotalItemComponent} from "./total-item/total-item.component";
 import { TestComponent } from './test/test.component';
 import {HttpClientModule} from "@angular/common/http";
 import { TodoComponent } from './todo/todo.component';
+import {TodoService} from "./services/todo.service";
+import { MakeRedDirective } from './directives/make-red.directive';
 
 @NgModule({
     declarations: [
@@ -20,14 +22,15 @@ import { TodoComponent } from './todo/todo.component';
         TotalListComponent,
         TotalItemComponent,
         TestComponent,
-        TodoComponent
+        TodoComponent,
+        MakeRedDirective
     ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule
     ],
-    providers: [],
+    providers: [TodoService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
